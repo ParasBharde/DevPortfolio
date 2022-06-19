@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Projects() {
   function renderProjectCards() {
     const projectsArray = [
@@ -10,14 +11,13 @@ export default function Projects() {
         skills: "Javascript",
         demoURL: "https://id-card-generator-2022.netlify.app",
         "github": "https://github.com/ParasBharde/ID-card-generator"
-      },
-      {
-        name: 'Digital Clock',
-        description: 'A digital clock is a type of clock that displays the time digitally (i.e. in numerals or other symbols), as opposed to an analog clock, where the time is indicated by the positions of rotating hands.',
-        image: "https://res.cloudinary.com/dixj17hz9/image/upload/v1655202782/Digital_Clock_zxzo8x.png",
-        skills: "HTML and CSS3",
+      }, {
+        name: 'GroceryItem Listing',
+        description: 'GroceryItem Listing App',
+        image: "https://res.cloudinary.com/dixj17hz9/image/upload/v1655295691/GroceryItem_Listing_o1eipl.png",
+        skills: "Javascript,Frontend(React.js),Back-end(Node.js),MongoDB,FireBase",
         demoURL: "#",
-        "github": "#"
+        "github": "https://github.com/ParasBharde/GroceryItem-Listing"
       },
       {
         name: 'CryptoCurruncy Price Listing ',
@@ -27,7 +27,14 @@ export default function Projects() {
         demoURL: "#",
         "github": "#"
       },
-
+      {
+        name: 'Digital Clock',
+        description: 'A digital clock is a type of clock that displays the time digitally (i.e. in numerals or other symbols), as opposed to an analog clock, where the time is indicated by the positions of rotating hands.',
+        image: "https://res.cloudinary.com/dixj17hz9/image/upload/v1655202782/Digital_Clock_zxzo8x.png",
+        skills: "HTML and CSS3",
+        demoURL: "#",
+        "github": "#"
+      },
       {
         name: 'Food Items Listing ',
         description: 'Food items Listing App',
@@ -47,6 +54,7 @@ export default function Projects() {
     ];
     return projectsArray.map((projectItem) => {
       return (
+        <div>
         
           <div className="max-w-sm bg-white px-6 pt-6 pb-2  rounded-xl shadow-lg 
            transform hover:scale-105 transition duration-500" id="projects" key={projectItem.name}>
@@ -75,7 +83,7 @@ export default function Projects() {
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-indigo-600 mb-1"
+                    className="h-8 w-8 pt-2 text-indigo-600 mb-1"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -113,8 +121,7 @@ export default function Projects() {
             </div>
           </div>
        
-
-      )
+         </div>      )
     })
   }
   return (

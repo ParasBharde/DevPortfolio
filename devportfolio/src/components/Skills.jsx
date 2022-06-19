@@ -1,11 +1,12 @@
 import React from 'react'
+import Header from './Header';
 import Skillscss from './Skills.css'
 
 export default function Skills() {
   return (
     
  
-  <div className="down-containt mt-20" id="skills">
+  <div className="down-containt " id="skills">
     <section className="text-gray-200 bg-gray-900">
       <div className="max-w-4xl mx-auto px-5 py-24 ">
         <div className="text-center mb-20">
