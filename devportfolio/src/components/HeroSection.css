@@ -104,13 +104,10 @@
     background: url(../img/img1.jpg)
     center no-repeat;
     background-size: cover;
+    background-color: antiquewhite;
     border-radius:20px;
     z-index: 1;
     overflow: hidden;
-    
-    
-
-
 }
 
 .card::before,
