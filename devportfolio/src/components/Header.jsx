@@ -21,8 +21,8 @@ function classNames(...classes) {
 export default function Header() {
   return (
     
-    <div className="wrapper">
-    <header>
+    <div className="">
+    <header className="wrapper">
     <Disclosure as="nav" className="">
       {({ open }) => (
         <>

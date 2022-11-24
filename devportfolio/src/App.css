@@ -1,9 +1,9 @@
 body{
   position: relative;
 }
-.header_1{
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
+@media only screen and (min-width:600px){
+  body{
+      width: 100%;
+      
+  }
 }
